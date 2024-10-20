@@ -1,6 +1,18 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/layout/Header";
+import HomeHero from "@/components/layout/HomeHero";
+import HomeSection2 from "@/components/layout/HomeSection2";
+import HomeSection3 from "@/components/layout/HomeSection3";
+import HomeSection4 from "@/components/layout/HomeSection4";
+import HomeSection5 from "@/components/layout/HomeSection5";
+import HomeSection6 from "@/components/layout/HomeSection6";
+import HomeSection7 from "@/components/layout/HomeSection7";
+import HomeSection8 from "@/components/layout/HomeSection8";
+import HomeSection9 from "@/components/layout/HomeSection9";
+import HomeSection10 from "@/components/layout/HomeSection10";
+import Footer from "@/components/layout/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +40,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
+        <HomeHero />
+        <HomeSection2 />
+        <HomeSection3 />
+        <HomeSection4 />
+        <HomeSection5 />
+        <HomeSection6 />
+        <HomeSection7 />
+        <HomeSection8 />
+        <HomeSection9 />
+        <HomeSection10 />
+        <Footer />
         {children}
       </body>
     </html>
